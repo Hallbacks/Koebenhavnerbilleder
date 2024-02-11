@@ -1,0 +1,426 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from "../components/Button.astro";
+---
+
+<body class="bg-white font-mono lg:px-16">
+  <MainLayout title="Københavnerbilleder">
+    <article>
+      <section
+        id="herounit"
+        class="pt-10 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3"
+      >
+        <div class="p-4 sm:col-span-2">
+          <img
+            src="public/agfa-genanvendeligt-kamera-35mm-film-2-5.jpg"
+            alt="hero-foto"
+            class="w-full"
+          />
+        </div>
+        <div>
+          <h1 class="p-4 mt-10 font-bold text-2xl">
+            Københavnerbilleder <br /> – En guide til hipster foto
+          </h1>
+          <p class="p-4 prose sm:col-span-1"><em>af Sten Simons</em></p>
+          <br />
+          <div class="p-4 prose sm:col-span-1">
+            <Button variant="primary" size="large">Køb bogen</Button>
+          </div>
+        </div>
+      </section>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+        <div class="p-4 md:text-end">
+          <span
+            ><strong>Titel:</strong> Københavnerbilleder – En guide til hipster foto
+            <br />
+            <strong>Forfatter:</strong> Sten Simons <br />
+            <strong>Antal sider:</strong> 344 <br />
+            <strong>Forlag:</strong> Mellem Linjerne <br />
+            <strong>ISBN:</strong> 987-6-987654-32-1 <br />
+            <strong>Pris:</strong> DKK 399,-</span
+          >
+        </div>
+
+        <div class="p-4 mr-20">
+          Københavnerbilleder er de danske streetfotografers bibel: Det er en
+          fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle
+          væsentlige aspekter af streetfotografering fra grundlæggende teknik
+          til kreative eksperimenter. Alt sammen krydret med masser af
+          inspirerende fotos.
+          <br />
+          <br />
+          God læselyst!
+        </div>
+      </div>
+    </article>
+
+    <section
+      id="photos"
+      class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-3"
+    >
+      <article class="p-4">
+        <img
+          class="mx-auto w-full"
+          src="kobenhavnerbilleder-sten-simons.jpg"
+          alt="Book_cover"
+        />
+      </article>
+      <article class="p-4">
+        <img
+          class="mx-auto w-full"
+          src="public/kobenhavnerbilleder_aaben_venstre.jpg"
+          alt="Book_open"
+        />
+      </article>
+      <article class="p-4">
+        <img
+          class="mx-auto w-full"
+          src="public/kobenhavnerbilleder_oppefra.jpg"
+          alt="Book_close"
+        />
+      </article>
+    </section>
+
+    <h1 id="#kapitlerne" class="p-4 font-bold text-2xl">Kapitlerne</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2">
+      <div id="chapters" class="p-4">
+        <p>
+          <strong>Kapitel 1 – Intro til street foto</strong>
+          <br /> Hvad er street foto? Det handler i bund og grund om at skyde byens
+          liv og byens geometri (urban geometry). I dette kapitel får du en grundig
+          intro til hvad street foto er og et overblik over nogen af de kendte street-fotografer.
+          Alt krydret med en masse gode eksempler på street fotos. <br /><br />
+
+          <strong>Kapitel 2 – Om at skyde street</strong>
+          <br /> Vil du skyde street? Så er der ikke nogen vej udenom: Du skal ud
+          på gaderne og prøve det! I dette kapitel får du en teknisk indføring i
+          hvordan du bedst skyder street. Uanset om du er begynder eller professionel,
+          er der mange gode tekniske tips og tricks til street-skyderiet. <br
+          /><br />
+
+          <strong>Kapitel 3 – Om at finde det rette motiv</strong><br /> Indimellem
+          er man heldig, andre gange kommer man hjem helt uden gode motiver. Med
+          et par tips og tricks til at finde de rette motiver, stiger chancen gevaldigt
+          for at fange de gode motiver. <br /><br />
+
+          <strong>Kapitel 4 – Digital street</strong><br /> foto De fleste af os
+          skyder oftest digitalt fordi det er billigere og nemmere. Og nogen teknikker
+          og fremgangsmåder egner sig kun til digital street foto. I dette kapitel
+          får du en række tips og tricks til digital street-foto.
+        </p>
+      </div>
+
+      <div class="p-4">
+        <p>
+          <strong>Kapitel 5 – Analog street foto</strong>
+          <br /> Analog er sejt fordi det er mere “ægte,” dyrere og mere besværligt
+          end digital. Det signalerer entusiasme. Nogle teknikker og fremgangsmåder
+          egner sig bedst til analog street foto. I dette kapitel får du en række
+          tips og tricks til analog street-foto.
+          <br /><br />
+
+          <strong>Kapitel 6 – Om at skyde sort/hvid</strong>
+          <br /> Alle street-fotografer skyder sort/hvid nu og da. Nogen altid. Hvorfor?
+          Hvad er der specielt ved sort/hvid fotografering, og hvad adskiller sort/hvid
+          fra farvefotografering? Her får du en række tips og tricks til sort/hvid
+          fotografering. <br /><br />
+
+          <strong>Kapitel 7 - Kreative teknikker</strong>
+          <br /> Dobbelteksponeringer, ICM (intentional camera moves), smadrede objektiver,
+          gamle filmruller og alle mulige andre, spændende kreative teknikker kan
+          løfte dine fotografier fra at være kedelige dokumentationer af hverdagen
+          til at blive vilde kunststykker. Så dyk ned i dette kapitel om eksperimenterende
+          teknikker! <br /><br />
+
+          <strong>Kapitel 8 - Kom helt tæt på!</strong>
+          <br /> Street foto handler om at fotografere livet på gaden - men tør du
+          at gå helt tæt på fremmede mennesker og knipse løs? Du kan lige så godt
+          øve dig, for det er det der vil gøre dig til en bedre street-fotograf…
+        </p>
+      </div>
+    </div>
+
+    <h1 class="p-4 mt-10 font-bold text-2xl">Pressen siger</h1>
+    <section
+      id="reviews"
+      class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-16 text-center py-10"
+    >
+      <article>
+        <img
+          class="mx-auto h-5 mb-4"
+          src="public/5stars.svg"
+          alt="Book_cover"
+        />
+        <p>
+          <em>
+            Københavnerbilleder er en grundig introduktion til at skyde billeder
+            med retro-kant. Hvad enten du er har arbejdet med foto siden
+            135-filmen kom på markedet, du kun har skudt digitalt eller er helt
+            nybegynder, er der masser af tips og tricks i bogen.
+          </em>
+          <br />
+          <br /> – Hanne Hovgaard, Berlingeren
+        </p>
+      </article>
+      <article>
+        <img class="mx-auto h-5 mb-4" src="public/4stars.svg" alt="Book_open" />
+        <p>
+          <em
+            >Teksten er underholdende, og billederne er sku’ flotte. Hvad mere
+            skal man sige om en fotobog?</em
+          >
+          <br /><br /> – Kim Kloggaard, Fotojournalen.dk
+        </p>
+      </article>
+      <article>
+        <img class="mx-auto h-5 mb-4" src="public/6stars.svg" alt="6stars" />
+        <p>
+          <em
+            >Sten Simons kan det der – og han bliver bedre og bedre. Stens
+            tredje fotobog er klart den bedste - her er han for alvor i sit
+            rette element, meget bedre end “studiefotografering som begyndere.”
+            <br /> Tillykke - godt arbejde.</em
+          >
+          <br /><br /> – Volmer Hansen, Lukkertiden.dk
+        </p>
+      </article>
+    </section>
+
+    <h1 class="p-4 mt-10 font-bold text-2xl">Billeder fra bogen</h1>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 p-4"
+    >
+      <div class="Billede 1">
+        <img
+          src="public/agfa-genanvendeligt-kamera-35mm-5.jpg"
+          alt="Image 1"
+          class="w-full h-auto"
+        />
+      </div>
+      <div class="Billede 2">
+        <img
+          src="public/agfa-genanvendeligt-kamera-35mm-8.jpg"
+          alt="Image 2"
+          class="w-full h-auto"
+        />
+      </div>
+      <div class="Billede 3">
+        <img
+          src="public/agfa-genanvendeligt-kamera-35mm-11.jpg"
+          alt="Image 3"
+          class="w-full h-auto"
+        />
+      </div>
+      <div class="Billede 4">
+        <img
+          src="public/agfa-genanvendeligt-kamera-35mm-film-2-5.jpg"
+          alt="Image 4"
+          class="w-full h-auto"
+        />
+      </div>
+      <div class="Billede 5">
+        <img
+          src="public/agfa-genanvendeligt-kamera-35mm-film-2-7.jpg"
+          alt="Image 5"
+          class="w-full h-auto"
+        />
+      </div>
+      <div class="Billede 6">
+        <img
+          src="public/lomo-smena-15.jpg"
+          alt="Image 6"
+          class="w-full h-auto"
+        />
+      </div>
+      <div class="Billede 7">
+        <img
+          src="public/amarminoen-med-et-agfa-le-box-12.jpg"
+          alt="Image 7"
+          class="w-full h-auto"
+        />
+      </div>
+      <div class="Billede 8">
+        <img
+          src="public/foraar-med-et-agfa-lebox-2-20.jpg"
+          alt="Image 8"
+          class="w-full h-auto"
+        />
+      </div>
+      <div class="Billede 9">
+        <img
+          src="public/vinter-2021-med-lomo-smena-17.jpg"
+          alt="Image 9"
+          class="w-full h-auto"
+        />
+      </div>
+      <div class="Billede 10">
+        <img
+          src="public/foraar-med-et-agfa-lebox-2-20.jpg"
+          alt="Image 10"
+          class="w-full h-auto"
+        />
+      </div>
+      <div class="Billede 11">
+        <img
+          src="public/nikkormat-ft2-remiseparken-7.jpg"
+          alt="Image 11"
+          class="w-full h-auto"
+        />
+      </div>
+      <div class="Billede 12">
+        <img
+          src="public/lomo-smena-15.jpg"
+          alt="Image 12"
+          class="w-full h-auto"
+        />
+      </div>
+    </div>
+
+    <div class="flex justify-center p-4">
+      <div class="max-w-5xl">
+        <h1 class="mt-10 font-bold text-2xl pb-5">Forfatteren</h1>
+        <section id="author" class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div class="portrait">
+            <img
+              src="public/sten_simons.jpg"
+              alt="author-foto"
+              class="w-full"
+            />
+          </div>
+          <div class="">
+            <p>
+              Sten Simons har en lang foto-karriere bag sig. <br /> Det hele startede
+              i 00’erne, da han gik rundt i Pisserenden for at fotografere ungdommens
+              forfald. Det ledte til en række udstillinger, og blev senere til hans
+              først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.” <br
+              /> Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede
+              en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” <br
+              /><br /> Sideløbende begyndte han at undervise i foto, og har skrevet
+              et utal af bøger, herunder bestsellerne Scener fra S-toget, Brun mad
+              - en visuel odysse, og lærebogen Fotografering for evnesvage.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <section>
+      <form class="max-w-4xl md:w-2/4 mx-auto px-4">
+        <h1 class="py-10 font-bold text-2xl">Køb Københavnerbilleder nu!</h1>
+        <div class="quantity-form">
+          <label for="quantity">Antal:</label>
+          <input
+            type="number"
+            id="quantity"
+            class="quantity-input w-16 rounded hover:bg-gray-100 active:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300"
+            value="0"
+            min="0"
+          />
+        </div>
+
+        <div class="mb-4 pt-5">
+          <div class="flex items-center">
+            <input
+              type="radio"
+              id="yes"
+              name="customer"
+              value="yes"
+              class="mr-2"
+            />
+            <label for="yes">PostNord</label>
+          </div>
+          <div class="flex items-center">
+            <input
+              type="radio"
+              id="no"
+              name="customer"
+              value="no"
+              class="mr-2"
+            />
+            <label for="no">Afhentning</label>
+          </div>
+
+          <div class="mb-4 mt-4">
+            <label for="name" class="block"></label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Fulde navn *"
+              class="rounded hover:bg-gray-100 active:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300"
+            />
+          </div>
+
+          <div class="mb-4">
+            <label for="address" class="block"></label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="Adresse *"
+              class="rounded hover:bg-gray-100 active:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300"
+            />
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 mb-4">
+            <div>
+              <label for="postal_code" class="block"></label>
+              <input
+                type="text"
+                id="postal_code"
+                name="postal_code"
+                placeholder="Post nr. *"
+                class="rounded hover:bg-gray-100 active:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 px-3 py-2 w-full"
+              />
+            </div>
+            <div>
+              <label for="city" class="block"></label>
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="By *"
+                class="rounded hover:bg-gray-100 active:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 px-3 py-2 w-full"
+              />
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <label for="email" class="block"></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="E-mail *"
+              class="rounded hover:bg-gray-100 active:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 px-3 py-2 w-full"
+            />
+          </div>
+
+          <div class="mb-4">
+            <label for="phone" class="block"
+              ><label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Tlf. nummer *"
+                  class="rounded hover:bg-gray-100 active:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 px-3 py-2 w-full"
+                />
+              </label>
+
+              <div class="my-5">
+                <input type="checkbox" class="rounded" />
+                <label>Tilmeld nyhedsbrev</label>
+              </div>
+            </label>
+
+            <div class="mb-5">
+              <Button variant="primary" size="large">Fortsæt</Button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+  </MainLayout></body
+>
